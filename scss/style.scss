@@ -70,6 +70,13 @@ body {
 	right: 0;
 }
 
+.section__title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 48px;
+	margin-bottom: 50px;
+}
+
 // ========================================================================================
 // Header
 .header {
@@ -245,7 +252,6 @@ body {
 	height: 3px;
 	background-color: #151515;
 	border-radius: 0;
-	opacity: 0.8;
 }
 .swiper-pagination-bullet-active {
 	height: 6px;
@@ -258,4 +264,93 @@ body {
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
 	bottom: 50px;
+}
+
+// ========================================================================================
+// Section Why Lease
+.why-lease {
+	padding: 150px 0;
+	// .why-lease__list
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 40px;
+		text-align: center;
+	}
+	// .why-lease__item
+	&__item {
+	}
+	// .why-lease__item-img
+	&__item-img {
+		margin-bottom: 30px;
+	}
+	// .why-lease__item-title
+	&__item-title {
+		font-weight: 700;
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+	// .why-lease__item-text
+	&__item-text {
+		text-align: left;
+	}
+}
+
+// ========================================================================================
+// Section How Does
+.howdoes {
+	padding-bottom: 150px;
+	// .how-does__inner
+	&__inner {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	// .how-does__text
+	&__text {
+	}
+	// .how-does__subtitle
+	&__subtitle {
+		padding-top: 50px;
+		font-weight: 700;
+		font-size: 24px;
+	}
+	// .how-does__list
+	&__list {
+		padding: 50px 0 70px;
+		counter-reset: myCounter;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+	// .how-does__list-item
+	&__list-item {
+		list-style-type: none;
+		position: relative;
+		margin-left: auto;
+		width: 270px;
+		min-height: 63px;
+		box-sizing: content-box;
+		padding: 19px 0 19px 240px;
+		&::before {
+			content: counter(myCounter);
+			counter-increment: myCounter;
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #0066ff;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			font-weight: 700;
+			font-size: 48px;
+			color: #fff;
+		}
+	}
+
+	// .how-does__item-text
+	&__item-text {
+	}
 }
