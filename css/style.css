@@ -1,13 +1,3 @@
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -15,12 +5,46 @@ body {
 }
 
 *,
-*::after,
-*::before {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
   padding: 0;
-  margin: 0;
   border: 0;
 }
 
@@ -29,10 +53,52 @@ a {
   color: inherit;
 }
 
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 ul li {
   list-style: none;
 }
 
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2"), url("../fonts/Inter-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2"), url("../fonts/Inter-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 .wrapper {
   min-height: 100%;
   display: -webkit-box;
@@ -305,4 +371,225 @@ body {
   font-weight: 700;
   font-size: 48px;
   color: #fff;
+}
+.welcome-to {
+  padding-bottom: 150px;
+}
+.welcome-to__title {
+  margin-bottom: 20px;
+}
+.welcome-to__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.welcome-to__video-content {
+  display: block;
+  margin: 0 auto;
+}
+
+.important-things {
+  padding-bottom: 150px;
+}
+.important-things__title {
+  margin-bottom: 20px;
+}
+.important-things__text {
+  margin: 0 auto 50px;
+  max-width: 580px;
+}
+.important-things__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.important-things__item-img {
+  margin-bottom: 20px;
+}
+.contacts {
+  padding: 100px 0 150px;
+}
+.contacts__title {
+  margin-bottom: 20px;
+}
+.contacts__text {
+  padding: 0 100px;
+  margin: 0 auto 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+}
+.form-contacts {
+  max-width: 580px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.form-contacts__input {
+  max-width: 270px;
+  padding: 18px 20px;
+  display: inline-block;
+  border: 1px solid #0066ff;
+  margin-bottom: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #000;
+}
+.form-contacts__input::-webkit-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #151515;
+  opacity: 0.5;
+}
+.form-contacts__input::-moz-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #151515;
+  opacity: 0.5;
+}
+.form-contacts__input:-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #151515;
+  opacity: 0.5;
+}
+.form-contacts__input::-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #151515;
+  opacity: 0.5;
+}
+.form-contacts__input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #151515;
+  opacity: 0.5;
+}
+.form-contacts__textarea {
+  width: 100%;
+  height: 290px;
+  resize: none;
+  padding: 28px 20px;
+  border: 1px solid #0066ff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #000;
+  margin-bottom: 50px;
+}
+.form-contacts__textarea::-webkit-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #151515;
+  opacity: 0.5;
+}
+.form-contacts__textarea::-moz-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #151515;
+  opacity: 0.5;
+}
+.form-contacts__textarea:-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #151515;
+  opacity: 0.5;
+}
+.form-contacts__textarea::-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #151515;
+  opacity: 0.5;
+}
+.form-contacts__textarea::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #151515;
+  opacity: 0.5;
+}
+.form-contacts__btn {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #151515;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 13px 61px;
+}
+
+.articles {
+  padding-bottom: 150px;
+}
+.articles__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 70px;
+}
+.articles__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.articles__item-img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.articles__item-title {
+  -ms-flex-preferred-size: 446px;
+      flex-basis: 446px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.articles__item-link {
+  color: #fff;
+  background-color: #0066ff;
+  padding: 4px 20px;
+}
+.articles__btn {
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #151515;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 13px 61px;
 }
