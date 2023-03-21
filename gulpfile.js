@@ -78,7 +78,7 @@ function cleanDist() {
 // Сборка проекта
 function building() {
 	return src(
-		['./src/css/style.min.css', './src/js/main.min.js', './src/**/*.html'],
+		['./src/css/style.min.css', './src/**/*.js', './src/**/*.html', './src/img/**/*', './src/fonts/**/*'],
 		{
 			base: './src/',
 		},
