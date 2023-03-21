@@ -1,9 +1,9 @@
 // ========================================================================================
 // Footer
 .footer {
-	background-color: #151515;
+	background-color: $mainBlack;
 	padding: 50px 0 32px;
-	color: #fff;
+	color: $mainWhite;
 	// .footer__menu
 	&__menu {
 		display: flex;

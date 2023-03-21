@@ -1,14 +1,28 @@
 // Использование математики
 @use 'sass:math';
 
-// Подключение миксинов
-// @import './_mixins.scss';
-
 // Подключение файла обнуляющих стилей
-@import './_null-style.scss';
+@import './base/_null-style.scss';
 
 // Подключение шрифтов
-@import './_fonts.scss';
+@import './base/_fonts.scss';
+
+// ========================================================================================
+// Общие параметры
+
+// Шрифт по умолчанию
+body {
+	font-size: 16px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+// Основные цвета
+$mainWhite: #fff;
+$mainWhiteDark: #e8e8e8;
+$mainBlue: #0066ff;
+$mainBlack: #151515;
 
 // ========================================================================================
 // Оболочка
@@ -27,16 +41,9 @@
 }
 
 // ========================================================================================
-// Общие стили и стили по умолчанию
-body {
-	font-size: 16px;
-	font-family: 'Inter', sans-serif;
-	font-weight: 400;
-	line-height: 1.3;
-}
-
+// Общие элементы
 .header {
-	background-color: #151515;
+	background-color: $mainBlack;
 }
 
 .header-main {
@@ -59,7 +66,7 @@ body {
 	max-width: 225px;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #151515;
+	background-color: $mainBlack;
 	font-family: 'Inter', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -68,6 +75,8 @@ body {
 	margin-bottom: 150px;
 }
 
+// ========================================================================================
+// Подключение стилей элементов и страниц
 @import './_header.scss';
 @import './_footer.scss';
 @import './_index.scss';

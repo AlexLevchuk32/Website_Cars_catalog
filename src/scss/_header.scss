@@ -29,11 +29,11 @@
 	}
 	// .menu__list-link
 	&__list-link {
-		color: #fff;
+		color: $mainWhite;
 		text-transform: uppercase;
 		font-weight: 700;
 	}
 	&__active {
-		color: #0066ff;
+		color: $mainBlue;
 	}
 }

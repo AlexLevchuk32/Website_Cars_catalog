@@ -51,7 +51,7 @@
 	// .item-card__content
 	&__content {
 		padding: 0 5px;
-		border: 1px solid #0066ff;
+		border: 1px solid $mainBlue;
 		border-top: 0;
 	}
 	// .item-card__title
@@ -74,8 +74,8 @@
 	// .item-card__link
 	&__link {
 		display: block;
-		color: #0066ff;
-		border: 1px solid #0066ff;
+		color: $mainBlue;
+		border: 1px solid $mainBlue;
 		border-top: 0;
 	}
 }

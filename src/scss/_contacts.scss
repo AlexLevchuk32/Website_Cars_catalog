@@ -29,7 +29,7 @@
 		max-width: 270px;
 		padding: 18px 20px;
 		display: inline-block;
-		border: 1px solid #0066ff;
+		border: 1px solid $mainBlue;
 		margin-bottom: 50px;
 		font-family: 'Inter', sans-serif;
 		font-size: 16px;
@@ -41,7 +41,7 @@
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 1.3;
-			color: #151515;
+			color: $mainBlack;
 			opacity: 0.5;
 		}
 	}
@@ -51,7 +51,7 @@
 		height: 290px;
 		resize: none;
 		padding: 28px 20px;
-		border: 1px solid #0066ff;
+		border: 1px solid $mainBlue;
 		font-family: 'Inter', sans-serif;
 		font-size: 16px;
 		font-weight: 400;
@@ -63,15 +63,15 @@
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 1.3;
-			color: #151515;
+			color: $mainBlack;
 			opacity: 0.5;
 		}
 	}
 	// .form-contacts__btn
 	&__btn {
 		text-transform: uppercase;
-		color: #fff;
-		background-color: #151515;
+		color: $mainWhite;
+		background-color: $mainBlack;
 		font-family: 'Inter', sans-serif;
 		font-size: 16px;
 		font-weight: 400;
@@ -109,8 +109,8 @@
 	}
 	// .articles__item-link
 	&__item-link {
-		color: #fff;
-		background-color: #0066ff;
+		color: $mainWhite;
+		background-color: $mainBlue;
 		padding: 4px 20px;
 	}
 }
