@@ -22,5 +22,3 @@ function open(event) {
 
 	document.querySelector(`#${button}`).classList.add('tabs__content-item--active');
 }
-
-// tabs__content-item--active
