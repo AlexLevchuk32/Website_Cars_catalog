@@ -140,11 +140,25 @@ body {
   right: 0;
 }
 
-.section__title {
+.section-title {
   text-align: center;
   font-weight: 700;
   font-size: 48px;
   margin-bottom: 50px;
+}
+
+.show-more__link {
+  display: block;
+  max-width: 225px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #151515;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 13px 61px;
+  margin-bottom: 150px;
 }
 
 .header__inner {
@@ -174,6 +188,9 @@ body {
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
+}
+.menu__active {
+  color: #0066ff;
 }
 
 .footer {
@@ -548,9 +565,6 @@ body {
   padding: 13px 61px;
 }
 
-.articles {
-  padding-bottom: 150px;
-}
 .articles__items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -582,14 +596,70 @@ body {
   background-color: #0066ff;
   padding: 4px 20px;
 }
-.articles__btn {
+
+.shoose-car {
+  padding-top: 100px;
+}
+.tabs__btns {
+  padding: 0 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+.tabs__btns--active {
+  color: #0066ff;
+}
+.tabs__btns-item {
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+.tabs__content-item {
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px 40px;
+  margin-bottom: 70px;
+}
+.tabs__content-item--active {
+  display: grid;
+}
+
+.item-card {
+  text-align: center;
+}
+.item-card__img {
   display: block;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #151515;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0 auto;
-  padding: 13px 61px;
+}
+.item-card__content {
+  padding: 0 5px;
+  border: 1px solid #0066ff;
+  border-top: 0;
+}
+.item-card__title {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.item-card__text {
+  margin-bottom: 20px;
+}
+.item-card__price {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.item-card__link {
+  display: block;
+  color: #0066ff;
+  border: 1px solid #0066ff;
+  border-top: 0;
 }
