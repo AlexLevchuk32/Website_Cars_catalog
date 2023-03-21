@@ -1,0 +1,39 @@
+// ========================================================================================
+// Header
+.header {
+	// .header__inner
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding-top: 40px;
+		padding-bottom: 45px;
+	}
+}
+
+.logo {
+	// .logo__img
+	&__img {
+	}
+}
+
+.menu {
+	// .menu__list
+	&__list {
+		display: flex;
+		gap: 35px;
+	}
+	// .menu__list-item
+	&__list-item {
+		cursor: pointer;
+	}
+	// .menu__list-link
+	&__list-link {
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	&__active {
+		color: #0066ff;
+	}
+}

@@ -1,0 +1,81 @@
+// ========================================================================================
+// catalog.html Section Choose Car
+.shoose-car {
+	padding-top: 100px;
+	// .shoose-car__tabs
+	&__tabs {
+	}
+}
+.tabs {
+	// .tabs__btns
+	&__btns {
+		padding: 0 150px;
+		display: flex;
+		justify-content: space-between;
+		gap: 80px;
+		margin-bottom: 100px;
+	}
+	&__btns--active {
+		color: #0066ff;
+	}
+	// .tabs__btns-item
+	&__btns-item {
+		font-weight: 700;
+		font-size: 24px;
+		cursor: pointer;
+		border: none;
+		background-color: transparent;
+		padding: 0;
+	}
+	// .tabs__content
+	&__content {
+	}
+	// .tabs__content-item
+	&__content-item {
+		display: none;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 100px 40px;
+		margin-bottom: 70px;
+	}
+	// .tabs__content-item--active
+	&__content-item--active {
+		display: grid;
+	}
+}
+.item-card {
+	text-align: center;
+	// .item-card__img
+	&__img {
+		display: block;
+	}
+	// .item-card__content
+	&__content {
+		padding: 0 5px;
+		border: 1px solid #0066ff;
+		border-top: 0;
+	}
+	// .item-card__title
+	&__title {
+		padding-top: 20px;
+		font-weight: 700;
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	// .item-card__text
+	&__text {
+		margin-bottom: 20px;
+	}
+	// .item-card__price
+	&__price {
+		font-weight: 700;
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	// .item-card__link
+	&__link {
+		display: block;
+		color: #0066ff;
+		border: 1px solid #0066ff;
+		border-top: 0;
+	}
+}

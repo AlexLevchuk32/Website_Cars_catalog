@@ -1,0 +1,75 @@
+// ========================================================================================
+// Footer
+.footer {
+	background-color: #151515;
+	padding: 50px 0 32px;
+	color: #fff;
+	// .footer__menu
+	&__menu {
+		display: flex;
+		justify-content: center;
+		gap: 194px;
+		margin-bottom: 50px;
+	}
+	// .footer__menu-list
+	&__menu-list {
+		max-width: 250px;
+	}
+	// .footer__menu-item
+	&__menu-item + &__menu-item {
+		padding-top: 20px;
+	}
+	// .footer__menu-title
+	&__menu-title {
+		font-size: 24px;
+		font-weight: 700;
+		padding-bottom: 20px;
+	}
+	// .footer__menu-link
+	&__menu-link {
+	}
+	// .footer__copy
+	&__copy {
+		max-width: 800px;
+		margin: 0 auto 30px;
+	}
+	// .footer__copy-text
+	&__copy-text {
+		font-size: 12px;
+		text-align: center;
+	}
+}
+
+.app {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	margin-bottom: 50px;
+	// .app_item-img
+	&_item-img {
+	}
+	// .app__item
+	&__item {
+	}
+	// .app__item-link
+	&__item-link {
+	}
+}
+
+.copy {
+	// .copy__nav
+	&__nav {
+	}
+	// .copy__nav-list
+	&__nav-list {
+		display: flex;
+		justify-content: center;
+		gap: 40px;
+	}
+	// .copy__nav-item
+	&__nav-item {
+	}
+	// .copy__nav-link
+	&__nav-link {
+	}
+}
