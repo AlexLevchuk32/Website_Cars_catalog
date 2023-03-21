@@ -37,3 +37,54 @@
 		color: $mainBlue;
 	}
 }
+
+// ========================================================================================
+// Меню бургер
+.menu__btn {
+	width: 30px;
+	height: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	display: none;
+	cursor: pointer;
+	span {
+		height: 2px;
+		width: 100%;
+		background-color: $mainWhite;
+	}
+}
+
+// ========================================================================================
+// Адаптив
+@media (max-width: 860px) {
+	.menu__btn {
+		display: flex;
+	}
+	.menu__btn,
+	.logo {
+		position: relative;
+		z-index: 10;
+	}
+	.menu__list {
+		position: absolute;
+		z-index: 5;
+		background-color: $mainBlack;
+		flex-direction: column;
+		align-items: center;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding-top: 200px;
+		height: 100vh;
+		transform: translateY(-100%);
+		transition: transform 0.3s ease;
+	}
+	.menu__list--active {
+		transform: translateY(0);
+	}
+}

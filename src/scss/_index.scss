@@ -226,7 +226,22 @@
 		}
 	}
 }
+
+@media (max-width: 1040px) {
+	.welcome-to {
+		&__video-content {
+			width: 100%;
+		}
+	}
+}
+
 @media (max-width: 860px) {
+	.why-lease {
+		&__list {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+		}
+	}
 	.important-things {
 		&__list {
 			grid-template-columns: repeat(2, 1fr);

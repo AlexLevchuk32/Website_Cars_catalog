@@ -53,11 +53,13 @@ function scripts() {
 
 // Функция для отслеживания изменений в файлах
 function watching() {
-	watch(['./src/scss/style.scss'], styles);
+	// watch(['./src/scss/style.scss'], styles);
+	watch(['./src/scss/**/*.scss'], styles);
 	watch(['./src/js/main.js'], scripts);
 
-	// Найти все файлы *.html во всех папках
+	// Найти все файлы *.html во всех вложенных папках в папке src
 	// watch(['/src/**/*.html']);
+
 	watch(['./src/*.html']).on('change', browserSync.reload);
 }
 
@@ -81,7 +83,8 @@ function building() {
 		[
 			'./src/css/style.min.css',
 			'./src/js/main.min.js',
-			'./src/**/*.html',
+			// './src/**/*.html',
+			'./src/*.html',
 			'./src/img/**/*',
 			'./src/fonts/**/*',
 		],
