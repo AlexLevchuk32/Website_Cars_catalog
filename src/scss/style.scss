@@ -113,18 +113,62 @@ $mainBlack: #151515;
 // ========================================================================================
 // Адаптив
 @media (max-width: 1180px) {
+	.articles {
+		// .articles__item-title
+		&__item-title {
+			margin-bottom: 20px;
+		}
+		// .articles__item-link
+		&__item-link {
+			margin-left: auto;
+		}
+	}
 }
 
 @media (max-width: 1040px) {
+	.show-more {
+		&__link {
+			margin-bottom: 100px;
+		}
+	}
 }
 
 @media (max-width: 860px) {
+	.articles {
+		// .articles__item-title
+		&__item-title {
+			margin-bottom: 10px;
+		}
+		// .articles__item-link
+		&__item-link {
+			margin-left: auto;
+		}
+	}
 }
 
 @media (max-width: 768px) {
 }
 
+@media (max-width: 650px) {
+	.articles {
+		&__items {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
+
 @media (max-width: 540px) {
+	.articles {
+		// .articles__items
+		&__items {
+			margin-bottom: 25px;
+		}
+	}
+	.show-more {
+		&__link {
+			margin-bottom: 50px;
+		}
+	}
 }
 
 // ========================================================================================
