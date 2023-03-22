@@ -25,9 +25,6 @@
 		font-weight: 700;
 		padding-bottom: 20px;
 	}
-	// .footer__menu-link
-	&__menu-link {
-	}
 	// .footer__copy
 	&__copy {
 		max-width: 800px;
@@ -45,32 +42,14 @@
 	justify-content: center;
 	gap: 40px;
 	margin-bottom: 50px;
-	// .app_item-img
-	&_item-img {
-	}
-	// .app__item
-	&__item {
-	}
-	// .app__item-link
-	&__item-link {
-	}
 }
 
 .copy {
-	// .copy__nav
-	&__nav {
-	}
 	// .copy__nav-list
 	&__nav-list {
 		display: flex;
 		justify-content: center;
 		gap: 40px;
-	}
-	// .copy__nav-item
-	&__nav-item {
-	}
-	// .copy__nav-link
-	&__nav-link {
 	}
 }
 

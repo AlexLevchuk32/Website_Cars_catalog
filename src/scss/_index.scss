@@ -31,8 +31,6 @@
 
 // ========================================================================================
 // Main Slider
-.slider {
-}
 .swiper {
 	&::after {
 		content: '';
@@ -45,15 +43,11 @@
 		background: rgba(21, 21, 21, 0.3);
 	}
 }
-.swiper-wrapper {
-}
 .swiper-slide {
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-}
-.swiper-pagination {
 }
 .swiper-pagination-bullet {
 	width: 120px;
@@ -86,9 +80,6 @@
 		gap: 40px;
 		text-align: center;
 	}
-	// .why-lease__item
-	&__item {
-	}
 	// .why-lease__item-img
 	&__item-img {
 		margin-bottom: 30px;
@@ -113,9 +104,6 @@
 	&__inner {
 		max-width: 600px;
 		margin: 0 auto;
-	}
-	// .how-does__text
-	&__text {
 	}
 	// .how-does__subtitle
 	&__subtitle {
@@ -157,9 +145,6 @@
 			font-size: 48px;
 			color: #fff;
 		}
-	}
-	// .how-does__item-text
-	&__item-text {
 	}
 }
 
@@ -203,15 +188,9 @@
 		grid-template-columns: repeat(4, 1fr);
 		gap: 40px;
 	}
-	// .important-things__item
-	&__item {
-	}
 	// .important-things__item-img
 	&__item-img {
 		margin-bottom: 20px;
-	}
-	// .important-things__item-text
-	&__item-text {
 	}
 }
 

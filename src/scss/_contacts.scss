@@ -14,9 +14,6 @@
 		font-weight: 700;
 		font-size: 24px;
 	}
-	// .contacts__form
-	&__form {
-	}
 }
 .form-contacts {
 	max-width: 580px;
@@ -82,18 +79,6 @@
 
 // ========================================================================================
 // Адаптив
-@media (max-width: 1180px) {
-}
-
-@media (max-width: 1040px) {
-}
-
-@media (max-width: 860px) {
-}
-
-@media (max-width: 768px) {
-}
-
 @media (max-width: 650px) {
 	.contacts {
 		padding: 50px 0 50px;
@@ -112,7 +97,4 @@
 			margin-bottom: 25px;
 		}
 	}
-}
-
-@media (max-width: 540px) {
 }
