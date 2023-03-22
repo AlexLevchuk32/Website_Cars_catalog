@@ -47,6 +47,7 @@
 	// .item-card__img
 	&__img {
 		display: block;
+		width: 100%;
 	}
 	// .item-card__content
 	&__content {
@@ -78,4 +79,21 @@
 		border: 1px solid $mainBlue;
 		border-top: 0;
 	}
+}
+
+// ========================================================================================
+// Адаптив
+@media (max-width: 1180px) {
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 860px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 540px) {
 }

@@ -41,6 +41,8 @@
 // ========================================================================================
 // Меню бургер
 .menu__btn {
+	display: block;
+	position: relative;
 	width: 30px;
 	height: 16px;
 	display: flex;
@@ -86,5 +88,21 @@
 	}
 	.menu__list--active {
 		transform: translateY(0);
+	}
+	.menu__btn--open {
+		span {
+			position: absolute;
+		}
+		span:nth-child(2) {
+			width: 0;
+		}
+		span:nth-child(1) {
+			top: 50%;
+			transform: rotate(-45deg);
+		}
+		span:nth-child(3) {
+			top: 50%;
+			transform: rotate(45deg);
+		}
 	}
 }

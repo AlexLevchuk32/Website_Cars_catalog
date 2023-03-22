@@ -81,36 +81,18 @@
 }
 
 // ========================================================================================
-// contacts.html Section Contact Articles
-.articles {
-	// .articles__items
-	&__items {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 40px;
-		margin-bottom: 70px;
-	}
-	// .articles__item
-	&__item {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-	}
-	// .articles__item-img
-	&__item-img {
-		width: 100%;
-		margin-bottom: 30px;
-	}
-	// .articles__item-title
-	&__item-title {
-		flex-basis: 446px;
-		font-weight: 700;
-		font-size: 24px;
-	}
-	// .articles__item-link
-	&__item-link {
-		color: $mainWhite;
-		background-color: $mainBlue;
-		padding: 4px 20px;
-	}
+// Адаптив
+@media (max-width: 1180px) {
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 860px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 540px) {
 }

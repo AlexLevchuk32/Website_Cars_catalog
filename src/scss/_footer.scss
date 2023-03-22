@@ -73,3 +73,59 @@
 	&__nav-link {
 	}
 }
+
+// ========================================================================================
+// Адаптив
+@media (max-width: 1180px) {
+	.footer__menu {
+		gap: 100px;
+	}
+}
+
+@media (max-width: 1040px) {
+	.footer__menu {
+		gap: 80px;
+	}
+}
+
+@media (max-width: 860px) {
+	.footer__menu {
+		gap: 60px;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer__menu {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: 50px;
+		gap: 40px;
+	}
+}
+
+@media (max-width: 540px) {
+	.footer {
+		// &__menu-list {
+		// 	display: flex;
+		// 	flex-direction: column;
+		// }
+		&__menu-title {
+			font-size: 20px;
+		}
+		&__menu-link {
+			font-size: 14px;
+		}
+	}
+	.app {
+		gap: 10px;
+	}
+	.copy {
+		&__nav-list {
+			text-align: center;
+			gap: 25px;
+		}
+		&__nav-link {
+			font-size: 14px;
+		}
+	}
+}
